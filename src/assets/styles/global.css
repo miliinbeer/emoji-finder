@@ -1,0 +1,8 @@
+@import "./config/layout.css";
+@import "./config/config.css";
+@import "./config/reset.css";
+
+@import "./sections/header.css";
+@import "./sections/cards.css";
+
+@import "./blocks/input.css";

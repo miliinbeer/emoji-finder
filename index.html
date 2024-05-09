@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/assets/styles/global.css" />
+    <link rel="icon" href="./src/assets/favicon.png" />
+    <title>Emoji Finder</title>
+  </head>
+  <body>
+    <header class="header">
+      <p class="header__title">Emoji Finder</p>
+      <p class="header__description">Find emoji by keywords</p>
+    </header>
+    <main>
+      <div class="input-container container">
+        <input
+          class="input"
+          type="text"
+          name="input"
+          id="input"
+          placeholder="Placeholder"
+        />
+      </div>
+      <section class="cards container"></section>
+    </main>
+    <script type="module" src="./dist/app.js"></script>
+  </body>
+</html>

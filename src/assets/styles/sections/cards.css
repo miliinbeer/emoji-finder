@@ -1,0 +1,33 @@
+.cards {
+  padding: 47px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+.cards__card {
+  padding: 24px;
+  max-width: 100%;
+  width: 316px;
+  height: 184px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid var(--Stroke-light, #dee2e6);
+  background: #fff;
+}
+.cards__symbol {
+  font-size: 48px;
+  line-height: 48px;
+}
+.cards__title {
+  padding: 12px 0 18px 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 28px;
+  text-decoration-line: underline;
+}
+.cards__keywords {
+  color: #3f444a;
+  font-size: 12px;
+  font-weight: 400;
+}
