@@ -2,18 +2,21 @@ import { data } from "./data/data.js";
 
 const cards = <HTMLElement>document.querySelector(".cards");
 const input = <HTMLElement>document.querySelector("#input");
+
 // ↓ Типы данных вложенных элементов массива объектов data
 interface card {
   symbol: string;
   title: string;
   keywords: string;
 }
+
 // ↓ Функция по отображению карточек
 function showCards(data: Array<card>) {
   cards.innerHTML = "";
   data.forEach((item) => cards.append(createCard(item)));
 }
 showCards(data);
+
 // ↓ Функция по созданию карточки
 function createCard(item: card) {
   let card = document.createElement("div");
@@ -26,6 +29,7 @@ function createCard(item: card) {
   )}</p>`;
   return card;
 }
+
 // ↓ Функция по удалению одинаковых слов в описании карточки
 function createUniqueWords(string: string) {
   const unique = string
@@ -34,6 +38,7 @@ function createUniqueWords(string: string) {
     .filter((word) => word);
   return new Set(unique);
 }
+
 // ↓ Событие по поиску введеного названия
 input.addEventListener("input", (event) => {
   const value = (event.target as HTMLInputElement).value.toLowerCase().trim();
